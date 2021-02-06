@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>school mis survey form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="container">
+          <header class="header">
+                <h1 id="title">STA school management system survey form</h1>
+                <p id="description">thanks for taking your time to help us improve our mis</p>
+          </header>
+       <form id="survey-form">
+         <div>
+          <label id="name-label" for="name">Name</label>
+            <input type="text" id="name"  name="name" value="name"  placeholder="plz enter ur name" required class="form">
+         </div>
+            <br>
+        <div>
+          <label id="email-label" for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="plz enter ur email" required class="form" value="email">
+        </div>
+            <br>
+         <div>
+          <label id="number-label" for="number"
+          >Age</label>
+            <input type="number" id="number" name="number" placeholder="Age" min="10" max="50" class="form">
+        </div>
+        <div class="form-group">
+                <p>Which option best describes your role?</p>
+                <select id="dropdown" name="role"  required class="form">
+                  <option disabled selected value>Select your  role</option>
+                  <option value="student">Student</option>
+                  <option value="job">teacher</option>
+                  <option value="learner">principle</option>
+                  <option value="preferNo">parent </option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+     
+              
+          <div >
+                <p>IS this MIS usefull?</p>
+                <label>
+                  <input name="user-choice" value="absolutely" type="radio" class="radio" checked />absolutely</label >
+                <label>
+                  <input
+                    name="user-choice" value="maybe" type="radio" class="radio" />Maybe</label>
+          
+                <label
+                  ><input name="user-choice" value="not good" type="radio"class="radio"/>not good</label>
+              </div>
+          
+              <div >
+                <p>
+                which section would you like to be changed?
+                </p>
+                <select  required class="form">
+                  <option disabled selected value>Select an option</option>
+                  <option value="parent application">parent application</option>
+                  <option value="teacher-section">teacher section</option>
+                  <option value="attendance">attendance</option>
+                  <option value="mark">mark</option>
+                </select>
+              </div>
+          
+              <div>
+                <p>
+                  What would you like to improved?
+                  <span>(Check all that apply)</span>
+                </p>
+          <div>
+              <label>
+                  <input type="checkbox" name="appliction" class="checkbox" value="application">application
+              </label>
+              <label >
+                  <input type="checkbox" name="MIS" value="MIS" class="checkbox">MIS
+              </label>
+          </div>
+          
+              <div >
+                <p>if you have any  suggestions please write</p>
+                <textarea
+                  id="comments"
+                  class="textarea"
+                  name="comment"
+                  placeholder="Enter your comment here..."
+                ></textarea>
+              </div>
+          
+              <div >
+                <button type="submit" id="submit"  class="submit">
+                  Submit
+                </button>
+              </div>
+   </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
